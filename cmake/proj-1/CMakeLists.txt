@@ -7,8 +7,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 include_directories(vendor)
 link_directories(${CMAKE_SOURCE_DIR}/vendor/Debug_Libs/)
 
-find_package(OpenGL REQUIRED)
+#ind_package(OpenGL REQUIRED)
 
 add_executable(opengl-proj main.cpp 
         ${CMAKE_SOURCE_DIR}/vendor/glad/glad.c)
-target_link_libraries(opengl-proj glfw3)
+target_link_libraries(opengl-proj glfw3d)
