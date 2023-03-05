@@ -5,7 +5,7 @@ project(Hello-Window LANGUAGES CXX C)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-#message(STATUS " include dir: ${CMAKE_CURRENT_SOURCE_DIR}")
+message(STATUS " include dir: ${CMAKE_CURRENT_SOURCE_DIR}")
 
 find_package(OpenGL REQUIRED)
 add_executable(Hello-Window Hello-Window.cpp 
