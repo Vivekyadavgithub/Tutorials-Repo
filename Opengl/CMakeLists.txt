@@ -10,4 +10,5 @@ link_directories(${CMAKE_SOURCE_DIR}/vendor/libs)
 
 add_subdirectory(0.Hello-Window)
 add_subdirectory(1.Hello-Triangle)
+add_subdirectory(2.Textures)
 

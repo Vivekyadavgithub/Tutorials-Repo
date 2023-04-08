@@ -60,6 +60,7 @@ unsigned int compileShader(shaderType type, const char* shaderSource)
         shader = glCreateShader(GL_VERTEX_SHADER);
     else if (type == shaderType::FRAGMENT_SHADER)
         shader = glCreateShader(GL_FRAGMENT_SHADER);
+
     glShaderSource(shader, 1, &shaderSource, NULL);
     glCompileShader(shader);
 
@@ -188,7 +189,7 @@ int main()
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        // draw our first triangle
+        // draw our firstw triangle
         glUseProgram(shaderProgram);
         glBindVertexArray(VAO); // seeing as we only have a single VAO there's no need to bind it every time, but we'll do so to keep things a bit more organized
         glDrawArrays(GL_TRIANGLES, 0, 6);

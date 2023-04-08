@@ -10,5 +10,5 @@ add_executable(Textures texture-tut.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/../vendor/glad/glad.c)
 
 target_link_libraries(Textures glfw3d)
-target_include_directories(Textures PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../vendor)
+target_include_directories(Textures PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../vendor ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_directories(Textures PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../vendor/libs) #for running independently
